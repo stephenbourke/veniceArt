@@ -1,0 +1,91 @@
+<html>
+	<head>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="static/js/ajaxArt.js"></script>
+	<style>
+	#header {
+	    background-color:black;
+	    color:white;
+	    text-align:center;
+	    padding:5px;
+	}
+	#nav {
+		line-height:30px;
+   	 	background-color:#eeeeee;
+   	 	height:600px;
+   	 	width:100px;
+   	 	float:left;
+   	 	padding:5px; 
+	}
+	#dropdown {
+		float:left;
+		padding-top:25px;
+		padding-right:10px;
+		padding-left:10px;
+	}
+	#section {
+	    width:500px;
+		height:320px;
+	    float:left;
+	}	
+	#content {
+		display:none;
+	}
+	#media {
+		float: left;
+		padding: 10px;
+		margin-left: 60px;
+	}
+	#image {
+		float:left;
+		height:200px;
+		padding:10px;
+	}
+	#map {
+		float:left;
+		margin: 10px;
+		padding: 5px;
+		border: solid 1px #ccccc8;
+	}
+	</style>
+	</head>
+	<body>
+
+		<div id="header">
+			<h1>Art</h1>
+		</div>
+		
+		<div id="nav">
+			<a href="/">Home</a></br>
+			<a href="art">Art</a>
+		</div>
+		
+		<div id="dropdown">	
+			<b>Art List:</b> 
+			<select id="artDropdown">
+				<option value="0">Select</option>
+			</select>
+		</div>
+
+		<div id="content">
+			<div id="section">
+				<h2 style="border-bottom: dotted 1px #CCC"><span id="artName"></span></h2> 
+				<b>Artist:</b> <span id="artistName"></span> </br>
+				<b>Building:</b> <span id="buildingName"></span> </br>
+				<b>Notes:</b> <span id="notes"></span> </br></br>
+			</div>		
+
+			<div id="media">
+				<div id="image">
+					<img id="artImg"></img>
+				</div>
+
+				<div id="map">
+					<div id="googleMap" style="width:300px;height:300px"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>	
+</html>
